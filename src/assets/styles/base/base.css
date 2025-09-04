@@ -57,3 +57,7 @@ strong{
 label{
     display: grid;
 }
+
+input:focus{
+    outline: none;
+}
