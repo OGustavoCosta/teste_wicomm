@@ -1,0 +1,45 @@
+:root{
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+
+    font-family: 'MavenPro', sans-serif;
+    font-display: swap;
+}
+
+.main__background,
+.header--navigation,
+.footer__background{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    scroll-margin: 4.5rem; /* De acordo com o tamanho da navbar fixa */
+}
+
+.main__background > *,
+.header--navigation > *,
+.footer__background > *{
+    width: 100%;
+    max-width: 1280px;
+}
+
+strong{
+    font-weight: 500;
+}
+
+label{
+    display: grid;
+}

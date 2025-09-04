@@ -1,0 +1,123 @@
+/* Importando Tailwind */
+@import "tailwindcss";
+
+/* Importando Componentes*/
+@import "./components/button.css";
+@import "./components/card.css";
+@import "./components/details.css";
+
+/* Importando Base */
+@import "./base/base.css";
+@import "./base/typografy.css";
+
+/* Importando State */
+@import "./state/is-active.css";
+@import "./state/is-hidden.css";
+
+/* Importando Tema */
+@import "./theme/dark-theme.css";
+
+@theme{
+    --shadow-inset-custom: inset 0px 0px 50px #00000050;
+}
+
+@theme{
+    --breakpoint-xmd: 28rem;
+}
+
+/* Utils */
+.glassmorphism{
+    background: rgba( 0, 0, 0, 0 );
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 10.5px );
+    -webkit-backdrop-filter: blur( 10.5px );
+    border-bottom: 1px solid var(--color-background-dark);
+}
+
+.neumorphism-dark{
+    border-radius: 16px;
+    box-shadow:  11px 11px 25px #d6d6d625,
+             -11px -11px 25px #ffffff25;
+}
+
+.neumorphism-light{
+    border-radius: 16px;
+    box-shadow:  8px 8px 16px #c2c2c2,
+             -8px -8px 16px #ffffff;
+}
+
+.neumorphism-inner{
+    border-radius: 16px;
+    background: #e0e0e0;
+    box-shadow: inset 24px 24px 46px #acacac,
+                inset -24px -24px 46px #ffffff;
+}
+
+/* Grid/Flex Utils */
+.grid-rows-default{
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Slides (Swaper) */
+.swiper-linear .swiper-wrapper {
+  transition-timing-function: linear;
+}
+
+/* ANIMATIONS */
+
+/* Animação de Linha (hover) */
+.underline-animation{
+    position: relative;
+
+    transition: all;
+    transition-duration: 0.5s;
+    padding-bottom: 2px;
+}
+
+.underline-animation::before{
+    content: '';
+    width: 0%;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.underline-animation:hover::before{
+    width: 100%;
+    left: 0%;
+}
+
+/* Animação de preenchimento (left to right) */
+
+.fill-animation-left-to-right{
+    position: relative;
+}
+
+.fill-animation-left-to-right::before{
+    content: '';
+    z-index: 0;
+    width: 0%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.fill-animation-left-to-right:hover::before{
+    width: 100%;
+}
+
+.fill-icon-animation{
+    transform: translateX(-10%);
+    transition: all;
+    transition-duration: 0.5s;
+}

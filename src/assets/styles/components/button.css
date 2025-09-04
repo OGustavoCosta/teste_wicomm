@@ -1,0 +1,25 @@
+.button{
+    border-radius: 8px;
+    
+}
+
+.button--cta{
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: var(--color-highlight-light);
+    color: var(--color-dark);
+    font-weight: 600;
+    box-shadow: 0 5px 0 var(--color-highlight-dark);
+
+    transition: 0.2s;
+}
+
+.button--cta:hover{
+    box-shadow: 0 4px 0 var(--color-highlight-dark);
+    transform: scale(1.03);
+}
+
+.button--cta:active{
+    box-shadow: 0 0px 0 var(--color-highlight-dark);
+    transform: scale(1.03) translateY(4px);
+}
