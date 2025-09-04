@@ -53,8 +53,3 @@
     box-shadow: inset 24px 24px 46px #acacac,
                 inset -24px -24px 46px #ffffff;
 }
-
-/* Slides (Swaper) */
-.swiper-linear .swiper-wrapper {
-  transition-timing-function: linear;
-}

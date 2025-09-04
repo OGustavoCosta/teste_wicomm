@@ -5,6 +5,7 @@ import Navigation from "../../components/Navigation"
 
 /* Sections */
 import HomeHero from "./HomeHero"
+import HomeCarousel from "./HomeCarousel"
 
 function HomePage(){
     const [focused, setFocused] = useState<string | null>(null)
@@ -16,10 +17,13 @@ function HomePage(){
                 <section className="main__background">
                     <HomeHero/>
                 </section>
-                <section className="main__background">
+                <section className="main__background bg-background-light">
+                    <HomeCarousel/>
+                </section>
+                <section className="main__background relative before:w-[92%] before:absolute before:h-[1px] before:bg-gray">
                     <section className="section py-10 flex gap-5 items-center">
                         <img className="section__banner hidden md:block object-cover w-80 aspect-[3/4] lg:aspect-auto lg:w-auto" src="\images\gatinho-laranja.jpg" alt="" />
-                        <article className="article text-gray w-full grid gap-10">
+                        <article className="article text-gray w-full grid gap-8">
                             <h2 className="article__title text-5xl">NEWS<wbr/>LETTER</h2>
                             <div className="flex flex-wrap w-full gap-5 gap-y-8">
                                 <div className="article__content grow basis-[330px]">
