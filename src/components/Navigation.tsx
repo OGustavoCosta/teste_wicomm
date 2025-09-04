@@ -1,5 +1,8 @@
+/* hooks */
+import { useRef}  from "react"
+
+/* icons */
 import { Menu, X } from "lucide-react"
-import { useEffect, useRef, useState } from "react"
 
 function Navigation(){  
     const navRef = useRef<HTMLDivElement>(null)
@@ -11,7 +14,7 @@ function Navigation(){
     }
 
     return(
-        <header className={`header header--navigation fixed top-2.5 z-10`}>
+        <header className={`header header--navigation fixed top-2.5 z-10 border-[1px] lg:border-0`}>
             <nav className="nav font-pixelify flex justify-between text-light bg-dark z-5">
                 <div className="bg-background-light relative w-36">
                     <img className="nav__logo absolute left-[50%] translate-x-[-50%] top-2.5" src="\images\logos\logo.png" alt="" />
@@ -22,14 +25,14 @@ function Navigation(){
 
                     <li className="nav__item cursor-pointer p-2.5  border-[1px] h-full flex items-center justify-end border-light grow">
                         <ul className="nav__list flex gap-5">
-                            <li className="nav__item cursor-pointer"><a className="nav__link" href="">blog</a></li>
-                            <li className="nav__item cursor-pointer"><a className="nav__link" href="">lookbook</a></li>
-                            <li className="nav__item cursor-pointer"><a className="nav__link" href="">sobre a Gat</a></li>
-                            <li className="nav__item cursor-pointer"><a className="nav__link" href="">wishlist</a></li>
+                            <li className="nav__item cursor-pointer"><a className="nav__link underline-animation before:bg-light" href="">blog</a></li>
+                            <li className="nav__item cursor-pointer"><a className="nav__link underline-animation before:bg-light" href="">lookbook</a></li>
+                            <li className="nav__item cursor-pointer"><a className="nav__link underline-animation before:bg-light" href="">sobre a Gat</a></li>
+                            <li className="nav__item cursor-pointer"><a className="nav__link underline-animation before:bg-light" href="">wishlist</a></li>
                         </ul>
                     </li>
 
-                    <li className="nav__item cursor-pointer p-2.5 border-[1px] h-full flex items-center border-light"> <input className="nav__search border-b-[1px] focus:outline-0 border-dark focus:border-light" type="search" name="nav__search" placeholder="digite aqui o que procura"/> </li>
+                    <li className="nav__item cursor-pointer p-2.5 border-[1px] h-full flex items-center border-light"> <input className="nav__search border-b-[1px] border-dark focus:border-light" type="search" name="nav__search" placeholder="digite aqui o que procura"/> </li>
                     <li className="nav__item cursor-pointer p-2.5 border-[1px] h-full flex items-center border-light"> <img src="\icons\user-cat.png" alt="" /></li>
                     <li className="nav__item cursor-pointer py-2.5 px-5 border-[1px] h-full flex items-center border-light"> <img src="icons\cart.png" alt="" /></li>
                 </ul>
@@ -49,7 +52,7 @@ function Navigation(){
                         <li className="nav__item" onClick={ToggleNavigation}><a href="#servicos" className="nav__link">Serviços</a></li>
                         <li className="nav__item" onClick={ToggleNavigation}><a href="#contato" className="nav__link">Contato</a></li>
                     </ul>
-                    <p className="text-sm py-5 text-dark">Copyright © 2025. Gustavo Costa. Todos os direitos reservados.</p>
+                    <p className="text-sm py-5 text-dark">Copyright © 2025. Cat. Todos os direitos reservados.</p>
                 </div>
             </nav>
         </header>
