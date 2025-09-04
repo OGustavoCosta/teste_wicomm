@@ -7,9 +7,9 @@ import HomeHero from "./HomeHero"
 
 function HomePage(){
     return(
-        <div className="w-full min-h-[100lvh] text-base sora text-light bg-background-dark">
+        <div className="w-full min-h-[100lvh] text-base sora text-light bg-background-dark flex flex-col">
             <Navigation/>
-            <main className="main w-full overflow-hidden">
+            <main className="main w-full overflow-hidden grow">
                 <section className="main__background">
                     <HomeHero/>
                 </section>
