@@ -10,7 +10,7 @@ function HomeBenefit(){
     const benefitStyleList = 'flex gap-4 before:w-[25px] before:aspect-square before:bg-[url(/icons/paw.png)] before:bg-no-repeat before:bg-center before:bg-cover] w-fit ml-4 py-3'
 
     return(
-        <section className="section p-10 bg-highlight-red text-light grid grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] xl:grid-cols-[1.5fr_1fr_1fr_1fr] border-t-8 border-dark">
+        <section className="section p-5 md:p-10 bg-highlight-red text-light grid grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr] xl:grid-cols-[1.5fr_1fr_1fr_1fr] border-t-8 border-dark">
             <article className='article border-[1px] p-5 flex justify-center items-center gap-3 xsm:gap-5 col-span-2 lg:col-span-1 row-span-2'>
                 <div className='w-full flex justify-center items-start'>
                     <img className="article__image min-w-16 max-w-32 w-full" src="/icons/10.png" alt="" />
