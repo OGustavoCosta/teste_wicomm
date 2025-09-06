@@ -1,5 +1,7 @@
-/* Components */
+/* Hooks */
 import { useState } from "react"
+
+/* Components */
 import Footer from "../../components/Footer"
 import Navigation from "../../components/Navigation"
 
@@ -9,6 +11,7 @@ import HomeCarousel from "./HomeCarousel"
 import DefaultButton from "../../components/buttons/DefaultButton"
 import IconButton from "../../components/buttons/IconButton"
 import ProductCard from "../../components/cards/ProductCard"
+import HomeBenefit from "./HomeBenefit"
 
 /* Icons */
 
@@ -22,6 +25,11 @@ function HomePage(){
                 {/* HERO */}
                 <div className="main__background">
                     <HomeHero/>
+                </div>
+
+                {/* BENEFÍCIOS */}
+                <div className="main__background">
+                    <HomeBenefit/>
                 </div>
 
                 {/* APRESENTACÃO DE PRODUTOS */}

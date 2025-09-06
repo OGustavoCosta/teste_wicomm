@@ -73,7 +73,7 @@ function HomeCarousel(){
         <section className="section section--cards py-10 pb-20 bg-background-light grid text-gray">
             <header className='section__header relative ml-[5%] md:ml-[12%] translate-y-7 z-2 grid gap-1'>
                 <p className='section__text w-full max-w-[500px] text-sm xms:text-base md:text-xl'>Faça parte da comunidade de gatunos que amam design e papelão compartilhando a hashtag:</p>
-                <h3 className='section__title text-3xl xsm:text-5xl md:text-7xl text-highlight-cyan'>#Adoradores<wbr/>DePapelão</h3>
+                <h3 className='section__title text-4xl xsm:text-5xl md:text-7xl text-highlight-cyan'>#Adoradores<wbr/>DePapelão</h3>
             </header>
             
             <Swiper

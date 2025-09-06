@@ -50,3 +50,13 @@
     box-shadow: inset 24px 24px 46px #acacac,
                 inset -24px -24px 46px #ffffff;
 }
+
+/* SWIPPER */
+
+.slide-content{
+    width: fit-content !important;
+}
+
+.swiper-linear .swiper-wrapper {
+  transition-timing-function: linear;
+}
