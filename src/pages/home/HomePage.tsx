@@ -11,7 +11,6 @@ import IconButton from "../../components/buttons/IconButton"
 import ProductCard from "../../components/cards/ProductCard"
 
 /* Icons */
-import { MoveLeft, MoveRight } from "lucide-react"
 
 function HomePage(){
     const [focused, setFocused] = useState<string | null>(null)
