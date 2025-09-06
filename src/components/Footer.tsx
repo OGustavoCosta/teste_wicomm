@@ -8,9 +8,9 @@ function Footer(){
                     <div className="w-full basis-[200px] grow bg-gray flex justify-center items-center p-5">
                         <img src="\images\logos\logo-vertical.png" alt="logo da cat" />
                     </div>
-                    <div className="section__grid grid grid-cols-5 w-full basis-[400px] grow h-fit">
+                    <div className="section__grid grid grid-cols-5 w-full basis-[400px] grow">
                         <div className="section__content section__nav col-span-5">
-                            <ul className="section__list uppercase font-bold flex justify-start p-4 border-[1px] flex-wrap gap-3">
+                            <ul className="section__list uppercase font-bold flex justify-start p-4 border-[1px] flex-wrap gap-3 h-full">
                                 <li className="section__item"><a className="section__link" href="#">Produtos</a></li>
                                 <li className="section__item"><a className="section__link" href="#">Coleções</a></li>
                                 <li className="section__item"><a className="section__link" href="#">LookBook</a></li>

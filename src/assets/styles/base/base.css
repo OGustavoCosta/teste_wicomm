@@ -49,11 +49,6 @@ body{
     max-width: 1600px !important;
 }
 
-strong{
-    color: var(--color-highlight);
-    font-weight: 500;
-}
-
 label{
     display: grid;
 }
