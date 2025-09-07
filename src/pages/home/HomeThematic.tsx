@@ -98,9 +98,9 @@ function HomeThematic(){
                 ))}
 
                 <header className="section__header flex gap-20 items-center justify-between md:justify-end absolute top-0 right-0 z-5 mb-2.5 w-full">
-                    <h2 className="section__title uppercase font-bold text-xl">Coleções</h2>
+                    <h2 className="section__title uppercase font-bold text-xl hidden sm:flex">Coleções</h2>
                     <a className="section__link uppercase underline text-sm" href="#">Ver Todas</a>
-                    <nav className="nav gap-2 hidden sm:flex relative w-32">
+                    <nav className="nav gap-2 flex relative w-32">
                         <span className="swiper-prev"></span>
                         <span className="swiper-next"></span>
                     </nav>
