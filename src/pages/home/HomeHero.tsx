@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // import Swiper core and required modules
-import { Autoplay, Navigation, Pagination, Keyboard, Parallax} from 'swiper/modules';
+import { Autoplay, Navigation, Parallax} from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/swiper-bundle.css';
@@ -25,12 +25,8 @@ function HomeHero(){
     return(
         <section id="inicio" className="section section--hero w-full relative">
             <Swiper
-                modules={[Navigation, Pagination, Keyboard, Parallax, Autoplay]}
+                modules={[Navigation, Parallax, Autoplay]}
                 slidesPerView={1}
-                /* navigation={enableNav == true ? {
-                    prevEl: '.swiper-prev',
-                    nextEl: '.swiper-next',
-                } : enableNav} */
                 navigation={{
                     enabled: enableNav,
                     prevEl: '.swiper-prev',

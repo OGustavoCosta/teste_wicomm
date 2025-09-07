@@ -4,14 +4,15 @@ import { useState } from "react"
 /* Components */
 import Footer from "../../components/Footer"
 import Navigation from "../../components/Navigation"
+import IconButton from "../../components/buttons/IconButton"
+import ProductCard from "../../components/cards/ProductCard"
+import DefaultButton from "../../components/buttons/DefaultButton"
 
 /* Sections */
 import HomeHero from "./HomeHero"
 import HomeCarousel from "./HomeCarousel"
-import DefaultButton from "../../components/buttons/DefaultButton"
-import IconButton from "../../components/buttons/IconButton"
-import ProductCard from "../../components/cards/ProductCard"
 import HomeBenefit from "./HomeBenefit"
+import HomeThematic from "./HomeThematic"
 
 /* Icons */
 
@@ -34,36 +35,11 @@ function HomePage(){
 
                 {/* APRESENTACÃO DE PRODUTOS */}
                 <div className="main__background">
-                    {/* Temática */}
-                    <section className="section my-10 flex flex-col gap-5 relative z-1">
-                        <header className="section__header flex gap-20 items-center justify-between md:justify-end xl:absolute top-0 right-0 z-5">
-                            <h2 className="section__title uppercase font-bold text-xl">Coleções</h2>
-                            <a className="section__link uppercase underline text-sm" href="#">Ver Todas</a>
-                            <nav className="nav gap-2 hidden sm:flex">
-                                <img className="nav_left cursor-pointer" src="/icons/arrow-left.svg" alt="" />
-                                <img className="nav_right cursor-pointer" src="/icons/arrow-right.svg" alt="" />
-                            </nav>
-                        </header>
 
-                        <section className="section flex justify-center items-center lg:items-start flex-col lg:flex-row gap-10">
-                            <div className="section__content  flex flex-col items-end gap-15 relative w-full sm:w-fit">
-                                <span className="bg-[url(/images/background/patterns/pattern-1-4-circle.png)] bg-center bg-cover w-[105%] min-w-96 aspect-square absolute left-[25%] md:left-[15%] top-5 z-0"></span>
-                                <header className="section__header bg-highlight-cyan p-5 sm:p-10 self-start pl-20 sm:pl-30 sm:mr-30 lg:mr-40 relative w-fit">
-                                    <img className="section__banner absolute top-10 -left-[40%] sm:-left-[50%] w-[70%] sm:w-[80%]" src="/images/categories/minimalismo-banner.png" alt="" />
-                                    <h3 className="section__title uppercase font-bold text-4xl sm:text-5xl text-light">MINIMA<br/>LISMO</h3>
-                                </header>
-                                <article className="article flex flex-col gap-5 ml-22">
-                                    <p className="article__text text-sm w-full sm:text-lg max-w-60 sm:max-w-80 ">Also reality power discussion buy-in closest goto model. Have protocol at long practices low-hanging data most driver's.</p>
-                                    <DefaultButton fill={false} text="Explorar" link="#"/>
-                                </article>
-                            </div>
-                            <div className="section__content relative flex justify-center">
-                                <span className="bg-[url(/images/background/patterns/pattern-circle.png)] bg-center bg-cover w-[50%] aspect-square absolute left-[20%] top-20 z-0"></span>
-                                <img className="section__image mb-15 lg:mb-0 lg:mt-[35%] lg:max-w-96 relative lg:aspect-[3/4] object-cover" src="/images/categories/minimalismo-01.jpg" alt="" />
-                            </div>
-                        </section>
-                        
-                    </section>
+                </div>
+                <div className="main__background">
+                    {/* Temática */}
+                    <HomeThematic/>
 
                     {/* Produtos */}
                     <section className="section flex justify-center flex-wrap xl:flex-nowrap gap-5 py-5">

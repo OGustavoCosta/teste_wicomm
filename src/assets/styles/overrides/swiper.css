@@ -44,3 +44,13 @@
     aspect-ratio: 1/1;
     background-color: black;
 }
+
+.swiper-visible{
+    overflow: visible !important;
+}
+
+@media (width >= 96rem /* (1536px) */) {
+    .swiper-visible{
+        overflow: hidden !important;
+    }
+}
