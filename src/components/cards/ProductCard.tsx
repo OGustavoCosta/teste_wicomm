@@ -22,10 +22,10 @@ function ProductCard(){
                 </div>
                 <div className="flex gap-1 pt-1 w-fit items-start">
                     {/* caso criacão de novas cores, componentize */}
-                    <span className="card__color inline-block w-3 aspect-square bg-blue-500 rounded-full cursor-pointer" onClick={() => setColor('blue')}></span>
-                    <span className="card__color inline-block w-3 aspect-square bg-red-600 rounded-full cursor-pointer" onClick={() => setColor('red')}></span>
-                    <span className="card__color inline-block w-3 aspect-square bg-green-600 rounded-full cursor-pointer" onClick={() => setColor('green')}></span>
-                    <span className="card__color inline-block w-3 aspect-square bg-gray-700 rounded-full cursor-pointer" onClick={() => setColor('black')}></span>
+                    <span className="card__color inline-block w-4 md:w-3 aspect-square bg-blue-500 rounded-full cursor-pointer" onClick={() => setColor('blue')}></span>
+                    <span className="card__color inline-block w-4 md:w-3 aspect-square bg-red-600 rounded-full cursor-pointer" onClick={() => setColor('red')}></span>
+                    <span className="card__color inline-block w-4 md:w-3 aspect-square bg-green-600 rounded-full cursor-pointer" onClick={() => setColor('green')}></span>
+                    <span className="card__color inline-block w-4 md:w-3 aspect-square bg-gray-700 rounded-full cursor-pointer" onClick={() => setColor('black')}></span>
                 </div>
             </div>
         </article>

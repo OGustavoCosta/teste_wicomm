@@ -116,12 +116,44 @@ function HomePage(){
                                 </div>
                                 <form className="form grow basis-[330px] flex flex-col gap-8 justify-center" action="">
                                     <p className="relative mt-2">
-                                        <label htmlFor="petName" className={`form__label uppercase absolute left-0 transition-all duration-300 ${focused === "petName" ? "text-[10px] bottom-6" : "bottom-1  text-[12px]"}`}> Nome do seu pet </label>
-                                        <input type="text" className="form__input border-b-2 w-full relative z-10" name="petName" onFocus={() => setFocused('petName')} onBlur={() => setFocused(null)}/>
+                                        <label
+                                            htmlFor="petName"
+                                            className={`form__label uppercase absolute left-0 transition-all duration-300 ${
+                                                focused === "petName" || !!(document.querySelector('input[name="petName"]') as HTMLInputElement)?.value
+                                                    ? "text-[10px] bottom-6"
+                                                    : "bottom-1  text-[12px]"
+                                            }`}
+                                        >
+                                            Nome do seu pet
+                                        </label>
+                                        <input
+                                            type="text"
+                                            className="form__input border-b-2 w-full relative z-10"
+                                            name="petName"
+                                            onFocus={() => setFocused('petName')}
+                                            onBlur={() => setFocused(null)}
+                                            onChange={e => setFocused(focused === "petName" || e.target.value ? "petName" : null)}
+                                        />
                                     </p>
                                     <p className="relative">
-                                        <label htmlFor="yourEmail" className={`form__label uppercase absolute left-0 transition-all duration-300 ${focused === "yourEmail" ? "text-[10px] bottom-6" : "bottom-1  text-[12px]"}`}> Seu email </label>
-                                        <input type="text" className="form__input border-b-2 w-full relative z-10" name="yourEmail" onFocus={() => setFocused('yourEmail')} onBlur={() => setFocused(null)}/>
+                                        <label
+                                            htmlFor="yourEmail"
+                                            className={`form__label uppercase absolute left-0 transition-all duration-300 ${
+                                                focused === "yourEmail" || !!(document.querySelector('input[name="yourEmail"]') as HTMLInputElement)?.value
+                                                    ? "text-[10px] bottom-6"
+                                                    : "bottom-1  text-[12px]"
+                                            }`}
+                                        >
+                                            Seu email
+                                        </label>
+                                        <input
+                                            type="text"
+                                            className="form__input border-b-2 w-full relative z-10"
+                                            name="yourEmail"
+                                            onFocus={() => setFocused('yourEmail')}
+                                            onBlur={() => setFocused(null)}
+                                            onChange={e => setFocused(focused === "yourEmail" || e.target.value ? "yourEmail" : null)}
+                                        />
                                     </p>
                                     <p>
                                         <button type="submit" className="group cursor-pointer relative h-12 overflow-hidden overflow-x-hidden rounded-4xl px-8 py-2 border-2 duration-500  hover:text-light border-gray"><span className="relative z-10 uppercase">Cadastrar</span><span className="absolute inset-0 overflow-hidden rounded-md"><span className="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-gray transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"></span></span></button>

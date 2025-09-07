@@ -29,7 +29,7 @@ function Thematic({title, banner, text, image, link, color}: IThematicProps){
                 </article>
             </div>
             <div className="section__content relative flex justify-center">
-                <span className="bg-[url(/images/background/patterns/pattern-circle.png)] bg-center bg-cover w-[50%] aspect-square absolute left-[20%] top-20 z-0"></span>
+                <span data-swiper-parallax="-300" className="bg-[url(/images/background/patterns/pattern-circle.png)] bg-center bg-cover w-[50%] aspect-square absolute left-[20%] top-20 z-0"></span>
                 <img data-swiper-parallax="-100" className="section__image mb-15 lg:mb-0 lg:mt-[35%] lg:max-w-96 relative lg:aspect-[3/4] object-cover" src={image} alt="" />
             </div>
         </section>
